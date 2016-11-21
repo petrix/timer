@@ -24,7 +24,7 @@ You will need to set up predefined OSC client on the CasparCG Server, eg:
       <predefined-clients>
         <predefined-client>
           <address>192.168.1.123</address>
-          <port>7250</address>
+          <port>7250</port>
         </predefined-client>
       </predefined-clients>
     </osc>
