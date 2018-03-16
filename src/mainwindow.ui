@@ -14,7 +14,7 @@
    <string>Timer</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(10, 15, 20);
+   <string notr="true">background-color: rgb(10, 10, 10);
 border-width: 0;
 font: 22pt;
 color: grey;</string>
@@ -55,7 +55,7 @@ color: grey;</string>
 
 #main &gt; #panel_1,#panel_3 {
 	border-image: url(:/panel.png) stretch;
-	border-width: 5px;
+	border-width: 20px;
 }
 </string>
      </property>
@@ -94,13 +94,13 @@ color: grey;</string>
           <number>0</number>
          </property>
          <property name="leftMargin">
-          <number>20</number>
+          <number>10</number>
          </property>
          <property name="topMargin">
           <number>20</number>
          </property>
          <property name="rightMargin">
-          <number>20</number>
+          <number>10</number>
          </property>
          <property name="bottomMargin">
           <number>20</number>
@@ -137,13 +137,13 @@ color: grey;</string>
           <number>0</number>
          </property>
          <property name="leftMargin">
-          <number>20</number>
+          <number>10</number>
          </property>
          <property name="topMargin">
           <number>20</number>
          </property>
          <property name="rightMargin">
-          <number>20</number>
+          <number>10</number>
          </property>
          <property name="bottomMargin">
           <number>20</number>
