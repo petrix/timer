@@ -14,7 +14,7 @@
    <string>Timer</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(30, 30, 30);
+   <string notr="true">background-color: rgb(10, 20, 30);
 border-width: 0;
 font: 18pt;
 color: grey;</string>
@@ -49,11 +49,11 @@ color: grey;</string>
     <widget class="QWidget" name="main" native="true">
      <property name="styleSheet">
       <string notr="true">#main * {
-	background-color: rgb(36, 36, 36);
+	background-color: rgb(16, 26, 36);
 	background-clip: padding;
 }
 
-#main &gt; #panel_1,#panel_2,#panel_3 {
+#main &gt; #panel_1,#panel_3 {
 	border-image: url(:/panel.png) stretch;
 	border-width: 20px;
 }
@@ -109,49 +109,6 @@ color: grey;</string>
           <widget class="QLabel" name="label_1">
            <property name="text">
             <string>TRUCK TIME</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignHCenter|Qt::AlignTop</set>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </widget>
-      </item>
-      <item>
-       <widget class="QWidget" name="panel_2" native="true">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>1</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="minimumSize">
-         <size>
-          <width>0</width>
-          <height>40</height>
-         </size>
-        </property>
-        <layout class="QVBoxLayout" name="_4">
-         <property name="spacing">
-          <number>0</number>
-         </property>
-         <property name="leftMargin">
-          <number>30</number>
-         </property>
-         <property name="topMargin">
-          <number>20</number>
-         </property>
-         <property name="rightMargin">
-          <number>30</number>
-         </property>
-         <property name="bottomMargin">
-          <number>30</number>
-         </property>
-         <item>
-          <widget class="QLabel" name="label_2">
-           <property name="text">
-            <string>EVENT TIME</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignHCenter|Qt::AlignTop</set>
