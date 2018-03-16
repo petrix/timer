@@ -45,7 +45,7 @@ void CountDownWidget::update(const QTime& time)
     if(value > _threshold)
     {
         _blink.stop();
-        set_color(Qt::cyan);
+        set_color(Qt::green);
         show();
     }
     else if(value > midnight)
