@@ -14,9 +14,9 @@
    <string>Timer</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(10, 20, 30);
+   <string notr="true">background-color: rgb(10, 15, 20);
 border-width: 0;
-font: 18pt;
+font: 22pt;
 color: grey;</string>
   </property>
   <layout class="QGridLayout" name="_1">
@@ -49,13 +49,13 @@ color: grey;</string>
     <widget class="QWidget" name="main" native="true">
      <property name="styleSheet">
       <string notr="true">#main * {
-	background-color: rgb(16, 26, 36);
+	background-color: rgb(15, 20, 25);
 	background-clip: padding;
 }
 
 #main &gt; #panel_1,#panel_3 {
 	border-image: url(:/panel.png) stretch;
-	border-width: 20px;
+	border-width: 5px;
 }
 </string>
      </property>
@@ -94,16 +94,16 @@ color: grey;</string>
           <number>0</number>
          </property>
          <property name="leftMargin">
-          <number>30</number>
+          <number>20</number>
          </property>
          <property name="topMargin">
           <number>20</number>
          </property>
          <property name="rightMargin">
-          <number>30</number>
+          <number>20</number>
          </property>
          <property name="bottomMargin">
-          <number>30</number>
+          <number>20</number>
          </property>
          <item>
           <widget class="QLabel" name="label_1">
@@ -137,16 +137,16 @@ color: grey;</string>
           <number>0</number>
          </property>
          <property name="leftMargin">
-          <number>30</number>
+          <number>20</number>
          </property>
          <property name="topMargin">
           <number>20</number>
          </property>
          <property name="rightMargin">
-          <number>30</number>
+          <number>20</number>
          </property>
          <property name="bottomMargin">
-          <number>30</number>
+          <number>20</number>
          </property>
          <item>
           <widget class="QLabel" name="label_3">
