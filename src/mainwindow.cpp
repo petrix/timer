@@ -15,18 +15,18 @@ MainWindow::MainWindow(QWidget* parent) :
    // panel_2->layout()->addWidget(_timer = new TimerWidget());
     panel_3->layout()->addWidget(_count = new CountDownWidget());
 
-   connect(&_event, &Osc::Event::status_changed, [this](Osc::Event::Status status)
+/*    connect(&_event, &Osc::Event::status_changed, [this](Osc::Event::Status status)
     {
         switch(status)
         {
-    /*    case Osc::Event::Started:
+       case Osc::Event::Started:
             _timer->start();
             break;
 
         case Osc::Event::Stopped:
             _timer->stop();
             break;
-*/
+
         case Osc::Event::Reset:
            // _timer->reset();
             _count->reset();
@@ -34,7 +34,7 @@ MainWindow::MainWindow(QWidget* parent) :
             break;
         }
     });
-
+*/
     connect(_count, &CountDownWidget::time_reset, this, &MainWindow::reset_video_name);
 
     connect(&_video, &Osc::Video::time_changed, [this](const QTime& time, const QTime& total)
