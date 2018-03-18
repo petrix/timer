@@ -16,7 +16,7 @@
   <property name="styleSheet">
    <string notr="true">background-color: rgb(5, 5, 5);
 border-width: 0;
-font: 22pt;
+font: 30pt;
 color: grey;</string>
   </property>
   <layout class="QGridLayout" name="_1">
