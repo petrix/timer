@@ -1,32 +1,47 @@
 
 ////Raspbian Cleaner :)
-apt-get --purge remove wolfram-engine bluej greenfoot nodered nuscratch scratch sonic-pi libreoffice claws-mail claws-mail-i18n minecraft-pi python-pygame
+apt-get --purge -y remove wolfram-engine bluej greenfoot nodered nuscratch scratch scratch2 chromium-browser libreoffice* sonic-pi claws-mail claws-mail-i18n minecraft-pi python-pygame
 
-apt-get autoremove --purge
+apt-get autoremove -y --purge
 
 sudo apt-get update && sudo apt-get upgrade -y 
+
+nano /home/pi/.config/lxsession/LXDE-pi/autostart
+
+#@lxpanel --profile LXDE-pi
+#@pcmanfm --desktop --profile LXDE-pi
+#xscreensaver -no-splash
+#@point-pi
+/home/pi/timer/timer.sh --full --blink
+@unclutter -idle 0
+@xset s noexpose
+@xset s noblank
+@xset s off
+@xset -dpms
+
 /////https://yingtongli.me/blog/2016/12/21/splash.html
 
 cp /usr/share/plymouth/themes/pix/splash.png /usr/share/plymouth/themes/pix/splash_backup.png
-
+cp /home/pi/timer/casparcg.png /usr/share/plymouth/themes/pix/splash.png
 
 ////---------------------------------------------------
 ////On clean, freshly installed Raspbian:
 
 apt-get install -y qt5-qmake qt5-default libqt5svg5-dev
+sudo apt-get install unclutter
 
 git clone https://github.com/dimitry-ishenko-casparcg/oscpack.git
 
 cd oscpack
 
-make
+make && make install
 
-make install
+sudo /sbin/ldconfig -v
 
 cd /home/pi
 
-git clone https://github.com/dimitry-ishenko-casparcg/timer.git
+git clone https://github.com/petrix/timer.git
 
-qmake
+qmake && make
 
-make
+cp timer timer.sh
