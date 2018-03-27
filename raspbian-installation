@@ -5,7 +5,7 @@ apt-get --purge remove wolfram-engine bluej greenfoot nodered nuscratch scratch 
 apt-get autoremove --purge
 
 sudo apt-get update && sudo apt-get upgrade -y 
-
+https://yingtongli.me/blog/2016/12/21/splash.html
 ---------------------------------------------------
 On clean, freshly installed Raspbian:
 
