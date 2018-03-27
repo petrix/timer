@@ -1,3 +1,12 @@
+
+Raspbian Cleaner :)
+apt-get --purge remove wolfram-engine bluej greenfoot nodered nuscratch scratch sonic-pi libreoffice claws-mail claws-mail-i18n minecraft-pi python-pygame
+
+apt-get autoremove --purge
+
+sudo apt-get update && sudo apt-get upgrade -y 
+
+---------------------------------------------------
 On clean, freshly installed Raspbian:
 
 apt-get install -y qt5-qmake qt5-default libqt5svg5-dev
