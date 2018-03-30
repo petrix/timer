@@ -61,6 +61,7 @@ git clone https://github.com/dimitry-ishenko-casparcg/oscpack.git
 git clone https://github.com/petrix/timer.git
 cp /usr/share/plymouth/themes/pix/splash.png /usr/share/plymouth/themes/pix/splash_backup.png
 cp /home/pi/timer/casparcg.png /usr/share/plymouth/themes/pix/splash.png
+cp /home/pi/timer/res/autostart.conf /home/pi/.config/lxsession/LXDE-pi/autostart
 
 cd /home/pi/oscpack
 
@@ -70,7 +71,7 @@ sudo /sbin/ldconfig -v
 
 cd /home/pi/timer
 
-cp autostart /home/pi/.config/lxsession/LXDE-pi/autostart
+
 
 qmake && make
 
