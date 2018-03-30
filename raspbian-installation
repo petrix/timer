@@ -46,27 +46,33 @@ elevator-deadline quiet bootmenutimeout=1 datadev=mmcblk0p2 console=tty3 splash 
 
 /////https://yingtongli.me/blog/2016/12/21/splash.html
 
-cp /usr/share/plymouth/themes/pix/splash.png /usr/share/plymouth/themes/pix/splash_backup.png
-cp /home/pi/timer/casparcg.png /usr/share/plymouth/themes/pix/splash.png
+
 
 ////---------------------------------------------------
 ////On clean, freshly installed Raspbian:
 
 apt-get install -y qt5-qmake qt5-default libqt5svg5-dev
 sudo apt-get install unclutter
+mkdir /home/pi/oscpack
+mkdir /home/pi/timer
 
-git clone https://github.com/dimitry-ishenko-casparcg/oscpack.git
+git clone https://github.com/dimitry-ishenko-casparcg/oscpack.git /home/pi/oscpack
+git clone https://github.com/petrix/timer.git /home/pi/timer
+cp /usr/share/plymouth/themes/pix/splash.png /usr/share/plymouth/themes/pix/splash_backup.png
+cp /home/pi/timer/casparcg.png /usr/share/plymouth/themes/pix/splash.png
 
-cd oscpack
+cd /home/pi/oscpack
 
 make && make install
 
 sudo /sbin/ldconfig -v
 
-cd /home/pi
-
-git clone https://github.com/petrix/timer.git
+cd /home/pi/timer
 
 qmake && make
 
 cp timer timer.sh
+
+reboot
+
+//
