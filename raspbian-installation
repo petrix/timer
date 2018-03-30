@@ -28,10 +28,6 @@ hdmi_hot_plug=1
 hdmi_mode=33
 disable_splash=1
 boot_delay=0
-overscan_left=10
-overscan_right=10
-overscan_up=10
-overscan_down=10
 
 sudo nano /mnt/cmdline.txt
 elevator-deadline quiet bootmenutimeout=1 datadev=mmcblk0p2 console=tty3 splash loglevel=3 vt.global_cursor_default=0 plymouth.ignore-serial-consoles
