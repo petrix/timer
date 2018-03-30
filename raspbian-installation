@@ -52,8 +52,9 @@ elevator-deadline quiet bootmenutimeout=1 logo.nologo datadev=mmcblk0p2 console=
 
 #!/bin/bash
 
-apt-get update
 dpkg-reconfigure tzdata
+apt-get update
+
 cd /home/pi
 apt-get install -y qt5-qmake qt5-default libqt5svg5-dev git unclutter
 
