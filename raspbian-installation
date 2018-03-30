@@ -6,6 +6,14 @@ apt-get autoremove -y --purge
 
 sudo apt-get update && sudo apt-get upgrade -y 
 
+
+
+
+
+////CONFIG
+
+dpkg-reconfigure tzdata
+
 nano /home/pi/.config/lxsession/LXDE-pi/autostart
 
 #@lxpanel --profile LXDE-pi
@@ -46,7 +54,6 @@ cp /home/pi/timer/casparcg.png /usr/share/plymouth/themes/pix/splash.png
 
 apt-get install -y qt5-qmake qt5-default libqt5svg5-dev
 sudo apt-get install unclutter
-dpkg-reconfigure tzdata
 
 git clone https://github.com/dimitry-ishenko-casparcg/oscpack.git
 
