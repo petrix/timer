@@ -1,0 +1,10 @@
+#@lxpanel --profile LXDE-pi
+#@pcmanfm --desktop --profile LXDE-pi
+#xscreensaver -no-splash
+#@point-pi
+/home/pi/timer/timer.sh --full --blink
+@unclutter -idle 0
+@xset s noexpose
+@xset s noblank
+@xset s off
+@xset -dpms
