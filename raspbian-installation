@@ -70,6 +70,8 @@ sudo /sbin/ldconfig -v
 
 cd /home/pi/timer
 
+cp autostart /home/pi/.config/lxsession/LXDE-pi/autostart
+
 qmake && make
 
 cp timer timer.sh
