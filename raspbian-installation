@@ -51,8 +51,10 @@ elevator-deadline quiet bootmenutimeout=1 datadev=mmcblk0p2 console=tty3 splash 
 ////---------------------------------------------------
 ////On clean, freshly installed Raspbian:
 
+#!/bin/bash
+
 apt-get install -y qt5-qmake qt5-default libqt5svg5-dev
-sudo apt-get install unclutter
+sudo apt-get install -y unclutter
 mkdir /home/pi/oscpack
 mkdir /home/pi/timer
 
