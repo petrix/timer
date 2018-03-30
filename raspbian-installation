@@ -12,7 +12,7 @@ sudo apt-get update && sudo apt-get upgrade -y
 
 ////CONFIG
 
-dpkg-reconfigure tzdata
+
 
 nano /home/pi/.config/lxsession/LXDE-pi/autostart
 
@@ -43,7 +43,6 @@ sudo nano /mnt/cmdline.txt
 elevator-deadline quiet bootmenutimeout=1 datadev=mmcblk0p2 console=tty3 splash loglevel=3 vt.global_cursor_default=0 plymouth.ignore-serial-consoles
 
 
-
 /////https://yingtongli.me/blog/2016/12/21/splash.html
 
 
@@ -54,6 +53,7 @@ elevator-deadline quiet bootmenutimeout=1 datadev=mmcblk0p2 console=tty3 splash 
 #!/bin/bash
 
 apt-get update
+dpkg-reconfigure tzdata
 cd /home/pi
 apt-get install -y qt5-qmake qt5-default libqt5svg5-dev git unclutter
 
