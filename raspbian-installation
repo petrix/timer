@@ -40,7 +40,7 @@ disable_splash=1
 boot_delay=0
 
 sudo nano /mnt/cmdline.txt
-elevator-deadline quiet bootmenutimeout=1 datadev=mmcblk0p2 console=tty3 splash loglevel=3 vt.global_cursor_default=0 plymouth.ignore-serial-consoles
+elevator-deadline quiet bootmenutimeout=1 logo.nologo datadev=mmcblk0p2 console=tty3 splash loglevel=3 vt.global_cursor_default=0 plymouth.ignore-serial-consoles
 
 
 /////https://yingtongli.me/blog/2016/12/21/splash.html
