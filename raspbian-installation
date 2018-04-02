@@ -40,7 +40,7 @@ disable_splash=1
 boot_delay=0
 
 sudo nano /mnt/cmdline.txt
-elevator-deadline quiet bootmenutimeout=1 logo.nologo datadev=mmcblk0p2 console=tty3 splash loglevel=3 vt.global_cursor_default=0 plymouth.ignore-serial-consoles
+elevator-deadline quiet bootmenutimeout=0 logo.nologo datadev=mmcblk0p2 console=tty3 splash loglevel=3 vt.global_cursor_default=0 plymouth.ignore-serial-consoles
 
 
 /////https://yingtongli.me/blog/2016/12/21/splash.html
@@ -61,7 +61,7 @@ apt-get install -y qt5-qmake qt5-default libqt5svg5-dev git unclutter
 git clone https://github.com/dimitry-ishenko-casparcg/oscpack.git
 git clone https://github.com/petrix/timer.git
 cp /usr/share/plymouth/themes/pix/splash.png /usr/share/plymouth/themes/pix/splash_backup.png
-cp /home/pi/timer/casparcg.png /usr/share/plymouth/themes/pix/splash.png
+cp /home/pi/timer/casparcg2.png /usr/share/plymouth/themes/pix/splash.png
 cp /home/pi/timer/res/autostart.conf /home/pi/.config/lxsession/LXDE-pi/autostart
 
 cd /home/pi/oscpack
