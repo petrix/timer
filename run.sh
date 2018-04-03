@@ -28,4 +28,4 @@ qmake && make
 
 cp timer timer.sh
 
-reboot
+./timer.sh
