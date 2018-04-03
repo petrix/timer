@@ -1,3 +1,3 @@
 #!/bin/bash
 
-bash timer.sh --full --blink
+/home/pi/timer/timer.sh --full --blink
