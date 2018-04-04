@@ -1,3 +1,7 @@
 #!/bin/bash
 
-echo elevator=deadline quiet datadev=mmcblk0p2 bootmenutimeout=0 logo.nologo console=tty3 splash loglevel=3 vt.global_cursor_default=0 plymouth.ignore-serial-consoles > /mnt/cmdline.txt
+echo (0 3  * * * root  reboot) >> /etc/crontab
+echo (0 5  * * * root  /home/pi/timer/res/time-update.sh) >> /etc/crontab
+echo (0 10  * * * root  /home/pi/timer/res/time-update.sh) >> /etc/crontab
+echo (0 15  * * * root  /home/pi/timer/res/time-update.sh) >> /etc/crontab
+echo (0 20  * * * root  /home/pi/timer/res/time-update.sh) >> /etc/crontab
