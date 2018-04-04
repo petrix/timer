@@ -20,7 +20,7 @@ echo 0 20  * * * root  /home/pi/timer/res/time-update.sh >> /etc/crontab
 cd /home/pi
 apt-get install -y qt5-qmake qt5-default libqt5svg5-dev git unclutter
 
-git clone https://github.com/dimitry-ishenko-casparcg/oscpack.git
+git clone https://github.com/petrix/oscpack.git
 git clone https://github.com/petrix/timer.git
 cp /usr/share/plymouth/themes/pix/splash.png /usr/share/plymouth/themes/pix/splash_backup.png
 cp /home/pi/timer/res/casparcg_boot.png /usr/share/plymouth/themes/pix/splash.png
