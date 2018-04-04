@@ -1,59 +1,18 @@
-
-////Raspbian Cleaner :)
-apt-get --purge -y remove wolfram-engine bluej greenfoot nodered nuscratch scratch scratch2 chromium-browser libreoffice* sonic-pi claws-mail claws-mail-i18n minecraft-pi python-pygame
-
-apt-get autoremove -y --purge
-
-sudo apt-get update && sudo apt-get upgrade -y 
-
-
-
-
-
-////CONFIG
-
-
-
-nano /home/pi/.config/lxsession/LXDE-pi/autostart
-
-#@lxpanel --profile LXDE-pi
-#@pcmanfm --desktop --profile LXDE-pi
-#xscreensaver -no-splash
-#@point-pi
-/home/pi/timer/timer.sh --full --blink
-@unclutter -idle 0
-@xset s noexpose
-@xset s noblank
-@xset s off
-@xset -dpms
-
-
-/////using berryboot
-sudo mount /dev/mmcblk0p1 /mnt
-sudo nano /mnt/config.txt
-
-disable_overscan=0
-hdmi_group=1
-hdmi_hot_plug=1
-hdmi_mode=33
-disable_splash=1
-boot_delay=0
-
-sudo nano /mnt/cmdline.txt
-elevator-deadline quiet datadev=mmcblk0p2 bootmenutimeout=0 logo.nologo console=tty3 splash loglevel=3 vt.global_cursor_default=0 plymouth.ignore-serial-consoles
-
-
-/////https://yingtongli.me/blog/2016/12/21/splash.html
-
-
-
-////---------------------------------------------------
-////On clean, freshly installed Raspbian:
-
 #!/bin/bash
 
 dpkg-reconfigure tzdata
 apt-get update
+
+sudo mount /dev/mmcblk0p1 /mnt
+echo disable_overscan=0 >> /mnt/config.txt
+echo hdmi_group=1 >> /mnt/config.txt
+echo hdmi_hot_plug=1 >> /mnt/config.txt
+echo hdmi_mode=33 >> /mnt/config.txt
+echo disable_splash=1 >> /mnt/config.txt
+echo boot_delay=0 >> /mnt/config.txt
+echo bootmenutimeout=0 logo.nologo console=tty3 splash loglevel=3 vt.global_cursor_default=0 plymouth.ignore-serial-consoles >> /mnt/cmdline.txt
+
+
 
 cd /home/pi
 apt-get install -y qt5-qmake qt5-default libqt5svg5-dev git unclutter
