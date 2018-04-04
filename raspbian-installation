@@ -10,7 +10,7 @@ echo hdmi_hot_plug=1 >> /mnt/config.txt
 echo hdmi_mode=33 >> /mnt/config.txt
 echo disable_splash=1 >> /mnt/config.txt
 echo boot_delay=0 >> /mnt/config.txt
-echo bootmenutimeout=0 logo.nologo console=tty3 splash loglevel=3 vt.global_cursor_default=0 plymouth.ignore-serial-consoles >> /mnt/cmdline.txt
+echo elevator=deadline quiet datadev=mmcblk0p2 bootmenutimeout=0 logo.nologo console=tty3 splash loglevel=3 vt.global_cursor_default=0 plymouth.ignore-serial-consoles > /mnt/cmdline.txt
 
 
 
