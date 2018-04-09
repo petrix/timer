@@ -2,7 +2,7 @@
 
 dpkg-reconfigure tzdata
 apt-get update
-
+mkdir /opt/p3xx
 sudo mount /dev/mmcblk0p1 /mnt
 echo disable_overscan=0 >> /mnt/config.txt
 echo hdmi_group=1 >> /mnt/config.txt
@@ -12,27 +12,27 @@ echo disable_splash=1 >> /mnt/config.txt
 echo boot_delay=0 >> /mnt/config.txt
 echo elevator=deadline quiet datadev=mmcblk0p2 bootmenutimeout=0 logo.nologo console=tty3 splash loglevel=3 vt.global_cursor_default=0 plymouth.ignore-serial-consoles > /mnt/cmdline.txt
 echo "* 4 * * * reboot >/dev/null 2>&1" >> /etc/crontab
-echo "* 5,10,15,20 * * * /home/pi/timer/res/time-update.sh >/dev/null 2>&1" >> /etc/crontab
+echo "* 5,10,15,20 * * * /opt/p3xx/timer/res/time-update.sh >/dev/null 2>&1" >> /etc/crontab
 
 
-cd /home/pi
+cd /opt/p3xx
 apt-get install -y qt5-qmake qt5-default libqt5svg5-dev git unclutter
 
 git clone https://github.com/petrix/oscpack.git
 git clone https://github.com/petrix/timer.git
 cp /usr/share/plymouth/themes/pix/splash.png /usr/share/plymouth/themes/pix/splash_backup.png
-cp /home/pi/timer/res/casparcg_boot.png /usr/share/plymouth/themes/pix/splash.png
-cp /home/pi/timer/res/autostart.conf /home/pi/.config/lxsession/LXDE-pi/autostart
-chmod a+x /home/pi/timer/run.sh
-chmod a+x /home/pi/timer/res/time-update.sh
+cp /opt/p3xx/timer/res/casparcg_boot.png /usr/share/plymouth/themes/pix/splash.png
+cp /opt/p3xx/timer/res/autostart.conf /home/pi/.config/lxsession/LXDE-pi/autostart
+chmod a+x /opt/p3xx/timer/run.sh
+chmod a+x /opt/p3xx/timer/res/time-update.sh
 
-cd /home/pi/oscpack
+cd /opt/p3xx/oscpack
 
 make && make install
 
 sudo /sbin/ldconfig -v
 
-cd /home/pi/timer
+cd /opt/p3xx/timer
 
 
 
