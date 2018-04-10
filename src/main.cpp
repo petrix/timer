@@ -25,10 +25,8 @@ try
         {
             window.setWindowState(window.windowState() | Qt::WindowFullScreen);
             window.setGeometry(QApplication::desktop()->screenGeometry(&window));
-        }
-        else if(option != "--blink")
-        {
-            window.set_threshold(QTime(0, 0, 15));
+             window.set_threshold(QTime(0, 0, 15));
+            
         }
     }
 
