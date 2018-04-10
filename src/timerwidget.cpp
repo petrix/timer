@@ -7,7 +7,7 @@ const QTime midnight { 0, 0 };
 
 ////////////////////////////////////////////////////////////////////////////////
 TimerWidget::TimerWidget(QWidget* parent) :
-    TimeWidget(Display::HrsMinSec, Qt::darkGgray, parent)
+    TimeWidget(Display::HrsMinSec, Qt::darkGray, parent)
 {
     reset();
 
