@@ -53,10 +53,13 @@ color: grey;</string>
 	background-clip: padding;
 }
 
-#main &gt; #panel_1,#panel_3 {
+#main &gt; #panel_2,#panel_3 {
 	border-image: url(:/panel.png) stretch;
 	border-width: 20px;
 }
+	      
+	      
+	      
 </string>
      </property>
      <layout class="QVBoxLayout" name="_2">
@@ -75,6 +78,11 @@ color: grey;</string>
       <property name="bottomMargin">
        <number>0</number>
       </property>
+	     
+	     
+	     
+	     
+	     
       <item>
        <widget class="QWidget" name="panel_1" native="true">
         <property name="sizePolicy">
@@ -105,6 +113,10 @@ color: grey;</string>
          <property name="bottomMargin">
           <number>20</number>
          </property>
+		
+		
+		
+		
          <item>
           <widget class="QLabel" name="label_1">
            <property name="text">
@@ -115,9 +127,56 @@ color: grey;</string>
            </property>
           </widget>
          </item>
+		
         </layout>
        </widget>
       </item>
+	     
+	     <item>
+       <widget class="QWidget" name="panel_2" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>1</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <layout class="QVBoxLayout" name="_4">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>30</number>
+         </property>
+         <property name="topMargin">
+          <number>20</number>
+         </property>
+         <property name="rightMargin">
+          <number>30</number>
+         </property>
+         <property name="bottomMargin">
+          <number>30</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>EVENT TIME</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignHCenter|Qt::AlignTop</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+	     
+	     
       <item>
        <widget class="QWidget" name="panel_3" native="true">
         <property name="sizePolicy">
