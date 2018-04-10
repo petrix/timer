@@ -1,8 +1,8 @@
 #!/bin/bash
 
-wget https://github.com/petrix/timer/raw/master/res/r3.sh
-chmod +x
+echo "/home/pi/timer/timer.sh --full --blink" > r3.sh
+echo "/opt/p3xx/timer/timer.sh --full --blink" >> r3.sh
+echo "/opt/p3xx/cgwatch/cgwatch -f" >> r3.sh
+chmod +x r3.sh
+bash r3.sh
 
-/home/pi/timer/timer.sh --full --blink
-/opt/p3xx/timer/timer.sh --full --blink
-/opt/p3xx/cgwatch/cgwatch -f
