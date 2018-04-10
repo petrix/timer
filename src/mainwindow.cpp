@@ -29,7 +29,7 @@ MainWindow::MainWindow(QWidget* parent) :
 
         case Osc::Event::Reset:
             _timer->reset();
-            _count->reset();
+            //_count->reset();
             reset_video_name();
             break;
         }
