@@ -7,7 +7,7 @@ const QTime midnight { 0, 0 };
 
 ////////////////////////////////////////////////////////////////////////////////
 TimerWidget::TimerWidget(QWidget* parent) :
-    TimeWidget(Display::HrsMinSec, Qt::gray, parent)
+    TimeWidget(Display::HrsMinSec, Qt::darkGgray, parent)
 {
     reset();
 
@@ -23,14 +23,14 @@ void TimerWidget::start()
     _epoch = Clock::instance()->datetime().addMSecs(-time().msecsSinceStartOfDay()).toMSecsSinceEpoch();
     _running = true;
 
-    set_color(Qt::setRgb(0, 137, 157));
+    set_color(QColor(54, 96, 216, 255));
 }
 
 ////////////////////////////////////////////////////////////////////////////////
 void TimerWidget::stop()
 {
     _running = false;
-    set_color(Qt::gray);
+    set_color(Qt::darkGray);
 }
 
 ////////////////////////////////////////////////////////////////////////////////
