@@ -23,7 +23,7 @@ void TimerWidget::start()
     _epoch = Clock::instance()->datetime().addMSecs(-time().msecsSinceStartOfDay()).toMSecsSinceEpoch();
     _running = true;
 
-    set_color(Qt::white);
+    set_color(Qt:: setRgb(#00899d));
 }
 
 ////////////////////////////////////////////////////////////////////////////////
