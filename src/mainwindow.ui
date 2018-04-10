@@ -50,7 +50,7 @@ color:rgb(100, 160, 140);
     <widget class="QWidget" name="main" native="true">
      <property name="styleSheet">
       <string notr="true">#main * {
-	background-color: rgb(5, 15, 25);
+	background-color: rgb(15, 20, 25);
 	background-clip: padding;
 }
 
