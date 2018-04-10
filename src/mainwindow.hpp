@@ -7,7 +7,7 @@
 #include "countdownwidget.hpp"
 #include "osc_event.hpp"
 #include "osc_video.hpp"
-//#include "timerwidget.hpp"
+#include "timerwidget.hpp"
 #include "ui_mainwindow.h"
 
 #include <QString>
@@ -28,7 +28,7 @@ public:
 private:
     ////////////////////
     ClockWidget* _clock;
-   // TimerWidget* _timer;
+   TimerWidget* _timer;
     CountDownWidget* _count;
 
     Osc::Event _event;
