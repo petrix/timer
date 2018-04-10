@@ -14,10 +14,10 @@
    <string>Timer</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(0, 5, 10);
+   <string notr="true">background-color: rgb(3, 5, 7);
 border-width: 0;
 font: 30pt;
-color:rgb(100, 160, 140);
+color:rgb(130, 170, 130);
 	  </string>
   </property>
   <layout class="QGridLayout" name="_1">
