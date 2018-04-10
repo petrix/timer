@@ -53,7 +53,7 @@ color: grey;</string>
 	background-clip: padding;
 }
 
-#main &gt; #panel_1,#panel_2,#panel_3 {
+#main &gt; #panel_2,#panel_3 {
 	border-image: url(:/panel.png) stretch;
 	border-width: 20px;
 }
@@ -75,6 +75,11 @@ color: grey;</string>
       <property name="bottomMargin">
        <number>0</number>
       </property>
+	     
+	     
+	     
+	     /*
+	     
       <item>
        <widget class="QWidget" name="panel_1" native="true">
         <property name="sizePolicy">
@@ -105,6 +110,9 @@ color: grey;</string>
          <property name="bottomMargin">
           <number>30</number>
          </property>
+		
+		
+		
          <item>
           <widget class="QLabel" name="label_1">
            <property name="text">
@@ -118,6 +126,9 @@ color: grey;</string>
         </layout>
        </widget>
       </item>
+	     
+	     */
+	     
       <item>
        <widget class="QWidget" name="panel_2" native="true">
         <property name="sizePolicy">
@@ -148,6 +159,10 @@ color: grey;</string>
          <property name="bottomMargin">
           <number>30</number>
          </property>
+		
+		
+		
+		
          <item>
           <widget class="QLabel" name="label_2">
            <property name="text">
@@ -161,6 +176,10 @@ color: grey;</string>
         </layout>
        </widget>
       </item>
+	     
+	     
+	     
+	     
       <item>
        <widget class="QWidget" name="panel_3" native="true">
         <property name="sizePolicy">
