@@ -6,7 +6,7 @@ const QTime midnight { 0, 0 };
 
 ////////////////////////////////////////////////////////////////////////////////
 CountDownWidget::CountDownWidget(QWidget* parent) :
-    TimeWidget(Display::HrsMinSec, Qt::gray, parent),
+    TimeWidget(Display::HrsMinSec, QColor(50, 50, 70), parent),
     _threshold(midnight)
 {
     reset();
@@ -45,12 +45,12 @@ void CountDownWidget::update(const QTime& time)
     if(value > _threshold)
     {
         _blink.stop();
-        set_color(Qt::green);
+        set_color(QColor(50, 228, 155));
         show();
     }
     else if(value > midnight)
     {
-        set_color(Qt::red);
+        set_color(QColor(255, 50, 0));
         if(!_blink.isActive()) _blink.start();
     }
     else
