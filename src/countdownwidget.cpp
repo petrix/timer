@@ -56,7 +56,7 @@ void CountDownWidget::update(const QTime& time)
     else
     {
         _blink.stop();
-        set_color(Qt::gray);
+        set_color(QColor(50, 50, 70));
         show();
     }
 
