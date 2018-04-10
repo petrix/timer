@@ -21,7 +21,7 @@ try
 
     for(const QString& option : options)
     {
-        if(option != "-f")
+        if(option == "-f")
         {
             window.setWindowState(window.windowState() | Qt::WindowFullScreen);
             window.setGeometry(QApplication::desktop()->screenGeometry(&window));
