@@ -30,7 +30,7 @@ void TimerWidget::start()
 void TimerWidget::stop()
 {
     _running = false;
-    set_color(QColor(80, 90, 100));
+    set_color(QColor(40, 50, 60));
 }
 
 ////////////////////////////////////////////////////////////////////////////////
