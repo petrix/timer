@@ -19,20 +19,18 @@ try
     auto options = application.arguments();
     options.removeAt(0); // application name
 
-   // for(const QString& option : options)
-   // {
-       // if(option == "--full")
-      // {
+   for(const QString& option : options)
+   {
+       if(option == "")
+       {
             window.setWindowState(window.windowState() | Qt::WindowFullScreen);
             window.setGeometry(QApplication::desktop()->screenGeometry(&window));
-      //  }
-     //   else if(option == "--blink")
-      //  {
-            window.set_threshold(QTime(0, 0, 15));
-     //   }
-  //  }
+        window.set_threshold(QTime(0, 0, 15));
+            
+        }
+    }
 
-   // return application.exec();
+    return application.exec();
 }
 catch(std::exception& e)
 {
