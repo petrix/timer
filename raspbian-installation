@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#git clone -b cgtimer https://github.com/petrix/timer.git cgtimer5
+#cd cgtimer5
+#qmake && make
+
 dpkg-reconfigure tzdata
 apt-get update
 mkdir /opt/p3xx
