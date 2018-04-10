@@ -22,10 +22,10 @@ git clone https://github.com/petrix/oscpack.git
 git clone -b cgtimer https://github.com/petrix/timer.git cgtimer
 git clone -b cgwatch https://github.com/petrix/timer.git cgwatch
 cp /usr/share/plymouth/themes/pix/splash.png /usr/share/plymouth/themes/pix/splash_backup.png
-cp /opt/p3xx/timer/res/casparcg_boot.png /usr/share/plymouth/themes/pix/splash.png
-cp /opt/p3xx/timer/res/autostart.conf /home/pi/.config/lxsession/LXDE-pi/autostart
-chmod a+x /opt/p3xx/timer/run.sh
-chmod a+x /opt/p3xx/timer/res/time-update.sh
+cp /opt/p3xx/cgtimer/res/casparcg_boot.png /usr/share/plymouth/themes/pix/splash.png
+cp /opt/p3xx/cgtimer/res/autostart.conf /home/pi/.config/lxsession/LXDE-pi/autostart
+chmod +x /opt/p3xx/cgtimer/run.sh
+chmod +x /opt/p3xx/cgtimer/res/time-update.sh
 
 cd /opt/p3xx/oscpack
 
