@@ -21,11 +21,11 @@ try
 
    for(const QString& option : options)
    {
-       if(option == "")
+       if(option == "--full")
        {
             window.setWindowState(window.windowState() | Qt::WindowFullScreen);
             window.setGeometry(QApplication::desktop()->screenGeometry(&window));
-        window.set_threshold(QTime(0, 0, 15));
+             window.set_threshold(QTime(0, 0, 15));
             
         }
     }
