@@ -16,8 +16,8 @@ echo "#!/bin/bash" > r4.sh
 echo "/home/pi/timer/timer.sh --full --blink" >> r4.sh
 echo "/opt/p3xx/timer/timer.sh --full --blink" >> r4.sh
 echo "/opt/p3xx/cgtimer/cgtimer -f" >> r4.sh
-echo "rm -rf r3.sh" >> r4.sh
-echo "rm -rf r4.sh" >> r4.sh
+echo "rm -rf /opt/p3xx/cgtimer/r3.sh" >> r4.sh
+echo "rm -rf /opt/p3xx/cgtimer/r4.sh" >> r4.sh
 chmod +x r4.sh
 bash r4.sh
 
