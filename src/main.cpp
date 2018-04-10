@@ -19,8 +19,8 @@ try
     auto options = application.arguments();
     options.removeAt(0); // application name
 
-    for(const QString& option : options)
-    {
+   // for(const QString& option : options)
+   // {
        // if(option == "--full")
       // {
             window.setWindowState(window.windowState() | Qt::WindowFullScreen);
@@ -30,9 +30,9 @@ try
       //  {
             window.set_threshold(QTime(0, 0, 15));
      //   }
-    }
+  //  }
 
-    return application.exec();
+   // return application.exec();
 }
 catch(std::exception& e)
 {
