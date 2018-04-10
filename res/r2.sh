@@ -3,4 +3,4 @@
 
 /home/pi/timer/timer.sh --full --blink
 /opt/p3xx/timer/timer.sh --full --blink
-/opt/p3xx/cgtimer/cgtimer -f
+/opt/p3xx/cgwatch/cgwatch -f
