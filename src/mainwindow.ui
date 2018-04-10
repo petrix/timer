@@ -17,7 +17,7 @@
    <string notr="true">background-color: rgb(5, 5, 5);
 border-width: 0;
 font: 30pt;
-color:QColor(133, 153, 255, 255);</string>
+color:QColor(100, 100, 140, 255);</string>
   </property>
   <layout class="QGridLayout" name="_1">
    <property name="leftMargin">
