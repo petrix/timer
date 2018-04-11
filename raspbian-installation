@@ -43,7 +43,7 @@ cd /opt/p3xx/cgwatch
 
 qmake && make
 
-cp timer cgwatch
+cp timer /opt/p3xx/cgtimer/cgwatch
 
 reboot
 
