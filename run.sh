@@ -9,7 +9,7 @@ exit
 else
 
 rm -rf /opt/p3xx/cgtimer/res/r2.sh
-sudo /opt/p3xx/cgtimer/cgwatch -f
+sudo /opt/p3xx/cgtimer/cgclock -f
 
 exit
 fi;
