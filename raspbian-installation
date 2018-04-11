@@ -45,6 +45,8 @@ qmake && make
 
 cp timer /opt/p3xx/cgtimer/cgwatch
 
+rm -rf /opt/p3xx/cgwatch
+rm -rf /home/pi/raspbian-installation
 reboot
 
 //
