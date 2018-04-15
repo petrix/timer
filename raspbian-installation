@@ -43,7 +43,7 @@ cd /opt/p3xx/cgclock
 
 qmake && make
 
-cp timer /opt/p3xx/cgtimer/cgclock
+cp /opt/p3xx/cgclock/timer /opt/p3xx/cgtimer/cgclock
 
 rm -rf /opt/p3xx/cgclock
 rm -rf /home/pi/raspbian-installation
