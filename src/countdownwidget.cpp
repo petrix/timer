@@ -50,7 +50,7 @@ void CountDownWidget::update(const QTime& time)
     }
     else if(value > midnight)
     {
-        set_color(QColor(255, 20, 50));
+        set_color(QColor(255, 20, 20));
         if(!_blink.isActive()) _blink.start();
     }
     else
