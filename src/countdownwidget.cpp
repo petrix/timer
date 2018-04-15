@@ -17,7 +17,7 @@ CountDownWidget::CountDownWidget(QWidget* parent) :
     _blink.setInterval(500);
     connect(&_blink, &QTimer::timeout, [this]() { setVisible(!isVisible()); });
 
-    _stop.setInterval(5000);
+    _stop.setInterval(3000);
     connect(&_stop, &QTimer::timeout, this, &CountDownWidget::reset);
 }
 
