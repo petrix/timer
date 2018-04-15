@@ -17,7 +17,7 @@ CountDownWidget::CountDownWidget(QWidget* parent) :
     _blink.setInterval(500);
     connect(&_blink, &QTimer::timeout, [this]() { setVisible(!isVisible()); });
 
-    _stop.setInterval(10000);
+    _stop.setInterval(5000);
     connect(&_stop, &QTimer::timeout, this, &CountDownWidget::reset);
 }
 
@@ -45,12 +45,12 @@ void CountDownWidget::update(const QTime& time)
     if(value > _threshold)
     {
         _blink.stop();
-        set_color(QColor(20, 255, 20));
+        set_color(QColor(20, 255, 50));
         show();
     }
     else if(value > midnight)
     {
-        set_color(QColor(255, 20, 20));
+        set_color(QColor(255, 20, 50));
         if(!_blink.isActive()) _blink.start();
     }
     else
