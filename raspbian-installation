@@ -1,6 +1,13 @@
 #!/bin/bash
 
 dpkg-reconfigure tzdata
+
+hwclock -s
+sudo /etc/init.d/ntp stop
+sudo ntpd -q -g
+sudo /etc/init.d/ntp start
+hwclock -w
+
 apt-get update
 mkdir /opt/p3xx
 sudo mount /dev/mmcblk0p1 /mnt
@@ -21,6 +28,7 @@ apt-get install -y qt5-qmake qt5-default libqt5svg5-dev git unclutter
 git clone https://github.com/petrix/oscpack.git
 git clone -b cgtimer https://github.com/petrix/timer.git cgtimer
 git clone -b cgwatch https://github.com/petrix/timer.git cgclock
+
 cp /usr/share/plymouth/themes/pix/splash.png /usr/share/plymouth/themes/pix/splash_backup.png
 cp /opt/p3xx/cgtimer/res/casparcg_boot.png /usr/share/plymouth/themes/pix/splash.png
 cp /opt/p3xx/cgtimer/res/autostart.conf /home/pi/.config/lxsession/LXDE-pi/autostart
