@@ -1,5 +1,5 @@
 #!/bin/bash
-     
+     hwclock -s
 if [ ! -f "/opt/p3xx/cgtimer/res/r2.sh" ]; then
    #echo "File $FILE does not exist."
 echo "CGTimer will start on next reboot" > /opt/p3xx/cgtimer/res/r2.sh
