@@ -29,14 +29,14 @@ apt-get install -y qt5-qmake qt5-default libqt5svg5-dev git unclutter
 
 
 git clone https://github.com/petrix/oscpack.git
-git clone -b cgtimer https://github.com/petrix/timer.git cgtimer
+#git clone -b cgtimer https://github.com/petrix/timer.git cgtimer
 git clone -b cgwatch https://github.com/petrix/timer.git cgclock
 
 cp /usr/share/plymouth/themes/pix/splash.png /usr/share/plymouth/themes/pix/splash_backup.png
-cp /opt/p3xx/cgtimer/res/casparcg_boot.png /usr/share/plymouth/themes/pix/splash.png
-cp /opt/p3xx/cgtimer/res/autostart.conf /home/pi/.config/lxsession/LXDE-pi/autostart
-chmod +x /opt/p3xx/cgtimer/run.sh
-chmod +x /opt/p3xx/cgtimer/res/time-update.sh
+cp /opt/p3xx/cgclock/res/casparcg_boot.png /usr/share/plymouth/themes/pix/splash.png
+cp /opt/p3xx/cgclock/res/autostart.conf /home/pi/.config/lxsession/LXDE-pi/autostart
+chmod +x /opt/p3xx/cgclock/run.sh
+chmod +x /opt/p3xx/cgclock/res/time-update.sh
 
 cd /opt/p3xx/oscpack
 
@@ -44,11 +44,11 @@ make && make install
 
 sudo /sbin/ldconfig -v
 
-cd /opt/p3xx/cgtimer
+#cd /opt/p3xx/cgtimer
 
-qmake && make
+#qmake && make
 
-cp timer cgtimer
+#cp timer cgtimer
 
 cd /opt/p3xx/cgclock
 
@@ -56,7 +56,7 @@ qmake && make
 
 cp /opt/p3xx/cgclock/timer /opt/p3xx/cgtimer/cgclock
 
-rm -rf /opt/p3xx/cgclock
+#rm -rf /opt/p3xx/cgclock
 rm -rf /home/pi/raspbian-installation
 reboot
 
