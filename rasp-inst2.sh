@@ -2,17 +2,17 @@
 
 apt-get update
 #mkdir /opt/p3xx
-sudo mount /dev/mmcblk0p1 /mnt
-echo disable_overscan=0 >> /mnt/config.txt
-echo hdmi_group=1 >> /mnt/config.txt
-echo hdmi_hot_plug=1 >> /mnt/config.txt
-echo hdmi_mode=33 >> /mnt/config.txt
-echo disable_splash=1 >> /mnt/config.txt
-echo boot_delay=0 >> /mnt/config.txt
+#sudo mount /dev/mmcblk0p1 /mnt
+#echo disable_overscan=0 >> /mnt/config.txt
+#echo hdmi_group=1 >> /mnt/config.txt
+#echo hdmi_hot_plug=1 >> /mnt/config.txt
+#echo hdmi_mode=33 >> /mnt/config.txt
+#echo disable_splash=1 >> /mnt/config.txt
+#echo boot_delay=0 >> /mnt/config.txt
 #echo dtparam=i2c_arm=on >> /mnt/config.txt
 #echo dtoverlay=i2c-rtc,ds3231 >> /mnt/config.txt
 
-echo elevator=deadline quiet datadev=mmcblk0p2 bootmenutimeout=0 logo.nologo console=tty3 splash loglevel=3 vt.global_cursor_default=0 plymouth.ignore-serial-consoles > /mnt/cmdline.txt
+#echo elevator=deadline quiet datadev=mmcblk0p2 bootmenutimeout=0 logo.nologo console=tty3 splash loglevel=3 vt.global_cursor_default=0 plymouth.ignore-serial-consoles > /mnt/cmdline.txt
 #echo "* 4 * * * reboot >/dev/null 2>&1" >> /etc/crontab
 #echo "* 5,10,15,20 * * * /opt/p3xx/timer/res/time-update.sh >/dev/null 2>&1" >> /etc/crontab
 #echo i2c-bcm2708 >> /etc/modules
@@ -21,8 +21,8 @@ echo elevator=deadline quiet datadev=mmcblk0p2 bootmenutimeout=0 logo.nologo con
 
 
 cd /opt/p3xx
-apt-get install -y qt5-qmake qt5-default libqt5svg5-dev git unclutter python-smbus i2c-tools
-apt-get purge fake-hwclock
+apt-get install -y qt5-qmake qt5-default libqt5svg5-dev git unclutter
+
 
 git clone https://github.com/petrix/oscpack.git
 git clone -b cgtimer https://github.com/petrix/timer.git cgtimer
