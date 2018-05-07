@@ -1,6 +1,8 @@
 #!/bin/bash
 
-sudo ntpd -gq
+
+modprobe i2c-bcm2708
+ntpd -gq
 hwclock -w
 apt-get update
 #mkdir /opt/p3xx
