@@ -29,5 +29,5 @@ wget https://github.com/petrix/timer/raw/master/res/autorst-1st
 cp /opt/p3xx/autorst-1st /home/pi/.config/lxsession/LXDE-pi/autostart
 
 wget https://github.com/petrix/timer/raw/master/rasp-inst2.sh
-
+chmod -755 /opt/p3xx/rasp-inst2.sh
 reboot
