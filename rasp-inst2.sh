@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo ntpd -gq
+hwclock -w
 apt-get update
 #mkdir /opt/p3xx
 #sudo mount /dev/mmcblk0p1 /mnt
