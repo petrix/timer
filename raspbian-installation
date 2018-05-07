@@ -1,12 +1,12 @@
 #!/bin/bash
 
 dpkg-reconfigure tzdata
-
-hwclock -s
-sudo /etc/init.d/ntp stop
-sudo ntpd -q -g
-sudo /etc/init.d/ntp start
-hwclock -w
+#https://intrahouse.ru/rtc-ds3231-raspberry-pi/
+#hwclock -s
+#sudo /etc/init.d/ntp stop
+#sudo ntpd -q -g
+#sudo /etc/init.d/ntp start
+#hwclock -w
 
 apt-get update
 mkdir /opt/p3xx
