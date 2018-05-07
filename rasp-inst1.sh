@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo su
+#sudo su
 dpkg-reconfigure tzdata
 sudo ntpd -gq
 apt-get update
