@@ -4,7 +4,7 @@ dpkg-reconfigure tzdata
 sudo ntpd -gq
 apt-get update
 apt-get -y install python-smbus i2c-tools
-apt-get purge fake-hwclock
+apt-get -y purge fake-hwclock
 mount /dev/mmcblk0p1 /mnt
 echo disable_overscan=0 >> /mnt/config.txt
 echo hdmi_group=1 >> /mnt/config.txt
