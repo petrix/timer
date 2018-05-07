@@ -54,10 +54,15 @@ cd /opt/p3xx/cgclock
 
 qmake && make
 
-cp /opt/p3xx/cgclock/timer /opt/p3xx/cgtimer/cgclock
+cp /opt/p3xx/cgclock/timer /opt/p3xx/cgclock/cgclock
+chmod a+x run-clock.sh
+chmod 777 run-clock.sh
+cp /opt/p3xx/cgclock/run-clock.sh /etc/init.d/
+update-rc.d run-clock.sh defaults
+
 
 #rm -rf /opt/p3xx/cgclock
-rm -rf /home/pi/raspbian-installation
+#rm -rf /home/pi/raspbian-installation
 reboot
 
 //
