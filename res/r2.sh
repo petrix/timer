@@ -8,24 +8,24 @@ function addtocrontab () {
   cat <(fgrep -i -v "$command" <(crontab -l)) <(echo "$job") | crontab -
 }
 addtocrontab "0 3 * * * reboot >/dev/null 2>&1"
-if [ -f "/opt/p3xx/cgtimer" ]; then
-git clone -b cgtimer https://github.com/petrix/timer.git /opt/p3xx/cgtimer
+#if [ -f "/opt/p3xx/cgtimer" ]; then
+#git clone -b cgtimer https://github.com/petrix/timer.git /opt/p3xx/cgtimer
 
-cd /opt/p3xx/cgtimer
-qmake && make
-cp /opt/p3xx/cgtimer/timer /opt/p3xx/cgclock/cgtimer
+#cd /opt/p3xx/cgtimer
+#qmake && make
+#cp /opt/p3xx/cgtimer/timer /opt/p3xx/cgclock/cgtimer
 #xset s off
-sudo /opt/p3xx/cgclock/cgtimer -f
+#sudo /opt/p3xx/cgclock/cgtimer -f
 #sudo chmod a+x r2.sh
 #sudo chmod 777 r2.sh
 #sudo bash /opt/p3xx/r2.sh
-exit
-else
-rm -rf /opt/p3xx/cgtimer
+#exit
+#else
+#rm -rf /opt/p3xx/cgtimer
 #xset s off
 sudo /opt/p3xx/cgclock/cgclock -f
-exit
-fi;
+#exit
+#fi;
 
 
 
