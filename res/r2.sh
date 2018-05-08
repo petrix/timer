@@ -20,6 +20,7 @@ sudo /opt/p3xx/cgclock/cgtimer -f
 #sudo bash /opt/p3xx/r2.sh
 exit
 else
+rm -rf /opt/p3xx/cgtimer
 sudo /opt/p3xx/cgclock/cgclock -f
 exit
 fi;
