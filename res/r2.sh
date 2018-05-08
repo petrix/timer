@@ -8,7 +8,7 @@ function addtocrontab () {
   cat <(fgrep -i -v "$command" <(crontab -l)) <(echo "$job") | crontab -
 }
 addtocrontab "0 3 * * * reboot >/dev/null 2>&1"
-if [ -f "/opt/p3xx/cgtimer" ]; then
+if [ ! -f "/opt/p3xx/cgtimer" ]; then
 git clone -b cgtimer https://github.com/petrix/timer.git /opt/p3xx/cgtimer
 
 cd /opt/p3xx/cgtimer
