@@ -25,8 +25,8 @@ echo rtc-ds1307 >> /etc/modules
 mkdir /opt/p3xx
 cd /opt/p3xx
 
-wget https://github.com/petrix/timer/raw/master/res/autorst-1st
-cp /opt/p3xx/autorst-1st /home/pi/.config/lxsession/LXDE-pi/autostart
+#wget https://github.com/petrix/timer/raw/master/res/autorst-1st
+echo sudo bash /opt/p3xx/rasp-inst2.sh >> /home/pi/.config/lxsession/LXDE-pi/autostart
 
 wget https://github.com/petrix/timer/raw/master/rasp-inst2.sh
 chmod -755 /opt/p3xx/rasp-inst2.sh
