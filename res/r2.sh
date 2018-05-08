@@ -14,7 +14,7 @@ git clone -b cgtimer https://github.com/petrix/timer.git /opt/p3xx/cgtimer
 cd /opt/p3xx/cgtimer
 qmake && make
 cp /opt/p3xx/cgtimer/timer /opt/p3xx/cgclock/cgtimer
-xset dpms force off
+xset s off
 sudo /opt/p3xx/cgclock/cgtimer -f
 #sudo chmod a+x r2.sh
 #sudo chmod 777 r2.sh
@@ -22,7 +22,7 @@ sudo /opt/p3xx/cgclock/cgtimer -f
 exit
 else
 rm -rf /opt/p3xx/cgtimer
-xset dpms force off
+xset s off
 sudo /opt/p3xx/cgclock/cgclock -f
 exit
 fi;
