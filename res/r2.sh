@@ -14,7 +14,7 @@ git clone -b cgtimer https://github.com/petrix/timer.git /opt/p3xx/cgtimer
 cd /opt/p3xx/cgtimer
 qmake && make
 cp /opt/p3xx/cgtimer/timer /opt/p3xx/cgclock/cgtimer
-sudo /opt/p3xx/cgclock/cgtimer -f
+sudo /opt/p3xx/cgclock/cgclock -f
 #sudo chmod a+x r2.sh
 #sudo chmod 777 r2.sh
 #sudo bash /opt/p3xx/r2.sh
