@@ -13,14 +13,14 @@ git clone -b cgtimer https://github.com/petrix/timer.git /opt/p3xx/cgtimer
 
 cd /opt/p3xx/cgtimer
 qmake && make
-cp /opt/p3xx/cgclock/cgtimer /opt/p3xx/cgtimer/cgtimer
+cp /opt/p3xx/cgtimer/timer /opt/p3xx/cgtimer/cgtimer
 #sudo chmod a+x r2.sh
 #sudo chmod 777 r2.sh
 #sudo bash /opt/p3xx/r2.sh
-exit
-else
+#exit
+#else
 
-exit
+#exit
 fi;
 
 
