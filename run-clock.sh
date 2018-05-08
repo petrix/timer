@@ -19,7 +19,7 @@ hwclock -w
 #exit
 #else
 
-rm -rf /opt/p3xx/r2.sh
+sudo rm -rf /opt/p3xx/r2.sh
 sudo ntpd -gq
 #sudo hwclock -w
 cd /opt/p3xx
