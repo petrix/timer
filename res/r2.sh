@@ -2,4 +2,4 @@
 
 
 # /home/pi/timer/timer.sh --full --blink
-/opt/p3xx/cgclock/cgclock -f
+sudo /opt/p3xx/cgclock/cgclock -f
