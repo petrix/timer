@@ -35,8 +35,8 @@ git clone -b cgwatch https://github.com/petrix/timer.git cgclock
 cp /usr/share/plymouth/themes/pix/splash.png /usr/share/plymouth/themes/pix/splash_backup.png
 cp /opt/p3xx/cgclock/res/casparcg_boot.png /usr/share/plymouth/themes/pix/splash.png
 cp /opt/p3xx/cgclock/res/autostart.conf /home/pi/.config/lxsession/LXDE-pi/autostart
-chmod +x /opt/p3xx/cgclock/run.sh
-chmod +x /opt/p3xx/cgclock/res/time-update.sh
+#chmod +x /opt/p3xx/cgclock/run.sh
+#chmod +x /opt/p3xx/cgclock/res/time-update.sh
 
 cd /opt/p3xx/oscpack
 
