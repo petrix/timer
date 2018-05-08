@@ -7,7 +7,7 @@ function addtocrontab () {
   local job="$frequency $command"
   cat <(fgrep -i -v "$command" <(crontab -l)) <(echo "$job") | crontab -
 }
-addtocrontab "0 3 * * * reboot >/dev/null 2>&1"
+addtocrontab "0 3,11 * * * reboot >/dev/null 2>&1"
 
 
 #crontab <<EOF
