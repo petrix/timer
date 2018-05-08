@@ -54,7 +54,7 @@ cd /opt/p3xx/cgclock
 
 qmake && make
 
-#cp /opt/p3xx/cgclock/timer /opt/p3xx/cgclock/cgclock
+cp /opt/p3xx/cgclock/timer /opt/p3xx/cgclock/cgclock
 chmod a+x run-clock.sh
 chmod 777 run-clock.sh
 #cp /opt/p3xx/cgclock/run-clock.sh /etc/init.d/
