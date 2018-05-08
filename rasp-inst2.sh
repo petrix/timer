@@ -61,8 +61,9 @@ chmod 777 run-clock.sh
 #update-rc.d run-clock.sh defaults
 
 
-#rm -rf /opt/p3xx/cgclock
-#rm -rf /home/pi/raspbian-installation
+rm -rf /opt/p3xx/autorst-1st
+rm -rf /home/pi/rasp-inst1.sh
+rm -rf /opt/p3xx/rasp-inst2.sh
 reboot
 
 //
