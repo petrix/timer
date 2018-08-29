@@ -1,5 +1,6 @@
 #!/bin/bash
 #sudo su
+export DISPLAY=:0
 sudo localedef -i en_US -f UTF-8 en_US.UTF-8
 dpkg-reconfigure tzdata
 sudo ntpd -gq
